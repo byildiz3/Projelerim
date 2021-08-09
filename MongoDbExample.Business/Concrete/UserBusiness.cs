@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using MongoDbExample.Business.Abstract;
+using MongoDbExample.Core.Models;
 using MongoDbExample.Data.Abstract;
+using MongoDbExample.Entities;
 using MongoDbExample.Models;
 
 namespace MongoDbExample.Business.Concrete
@@ -17,9 +19,16 @@ namespace MongoDbExample.Business.Concrete
            _userDataAccess = userDataAccess;
        }
 
-       //public List<UserModel> GetUser()
-       //{
-       //  return  _userDataAccess.GetList();
-       //}
-   }
+        public Token<List<User>> GetAllUser()
+        {
+            return _userDataAccess.GetList();
+        }
+
+
+        public Token<User> InsertUser(User u)
+        {
+            return _userDataAccess.Add(u);
+        }
+
+    }
 }

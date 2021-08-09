@@ -8,10 +8,10 @@ namespace MongoDbExample.Business.Mapping
 {
    public static class Services
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services)
-        {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            return services;
-        }
+        //public static IServiceCollection AddApplication(this IServiceCollection services)
+        //{
+        //    services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        //    return services;
+        //}
     }
 }

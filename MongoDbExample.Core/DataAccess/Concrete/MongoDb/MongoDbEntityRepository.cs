@@ -30,7 +30,7 @@ namespace MongoDbExample.Core.DataAccess.Concrete.MongoDb
             var result = new Token<List<T>>();
             try
             {
-                var data = IAsyncCursorSourceExtensions.ToList(_collection.AsQueryable());
+                var data = _collection.AsQueryable().ToList();
                 if (data != null)
                 {
                     result.SuccessResult(data);

@@ -10,22 +10,22 @@ namespace MongoDbExample.Business.Mapping.Mappings
 {
    public class MappingProfile:Profile
     {
-        public MappingProfile()
-        {
-            ApplyMappingsForAssembly(Assembly.GetExecutingAssembly());
-        }
+        //public MappingProfile()
+        //{
+        //    ApplyMappingsForAssembly(Assembly.GetExecutingAssembly());
+        //}
 
-        private void ApplyMappingsForAssembly(Assembly assembly)
-        {
-            var types = assembly.GetExportedTypes()
-                .Where(t => t.GetInterfaces()
-                .Any(i => i.IsGenericType && i.GetTypeDefinitionIfGeneric() == typeof(IMapFrom<>))).ToList();
-            foreach (var type in types)
-            {
-                var instance = Activator.CreateInstance(type);
-                var methodInfo = type.GetMethod("Mapping");
-                methodInfo?.Invoke(instance, new object[] {this});
-            }
-        }
+        //private void ApplyMappingsForAssembly(Assembly assembly)
+        //{
+        //    var types = assembly.GetExportedTypes()
+        //        .Where(t => t.GetInterfaces()
+        //        .Any(i => i.IsGenericType && i.GetTypeDefinitionIfGeneric() == typeof(IMapFrom<>))).ToList();
+        //    foreach (var type in types)
+        //    {
+        //        var instance = Activator.CreateInstance(type);
+        //        var methodInfo = type.GetMethod("Mapping");
+        //        methodInfo?.Invoke(instance, new object[] {this});
+        //    }
+        //}
     }
 }
