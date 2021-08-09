@@ -1,7 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstract\IPersonelDataAccess.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MongoDbExample.Core\MongoDbExample.Core.csproj" />
+    <ProjectReference Include="..\MongoDbExample.Entities\MongoDbExample.Entities.csproj" />
+  </ItemGroup>
 
 </Project>

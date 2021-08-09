@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbExample.Business", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbExample.Entities", "MongoDbExample.Entities\MongoDbExample.Entities.csproj", "{9A35CBC6-6EB0-44BE-B48A-8A29CED56B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbExample.Api", "MongoDbExample.Api\MongoDbExample.Api.csproj", "{586E077B-A7E7-46A3-BD54-4B610A9A6648}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbExample.Web", "MongoDbExample.Web\MongoDbExample.Web.csproj", "{5829DF97-C311-4916-A17E-11AF5C0046A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbExample.Test", "MongoDbExample.Test\MongoDbExample.Test.csproj", "{E72830CD-3235-485B-BF4A-5FD18453DEC3}"
@@ -41,10 +39,6 @@ Global
 		{9A35CBC6-6EB0-44BE-B48A-8A29CED56B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A35CBC6-6EB0-44BE-B48A-8A29CED56B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A35CBC6-6EB0-44BE-B48A-8A29CED56B94}.Release|Any CPU.Build.0 = Release|Any CPU
-		{586E077B-A7E7-46A3-BD54-4B610A9A6648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{586E077B-A7E7-46A3-BD54-4B610A9A6648}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{586E077B-A7E7-46A3-BD54-4B610A9A6648}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{586E077B-A7E7-46A3-BD54-4B610A9A6648}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5829DF97-C311-4916-A17E-11AF5C0046A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5829DF97-C311-4916-A17E-11AF5C0046A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5829DF97-C311-4916-A17E-11AF5C0046A1}.Release|Any CPU.ActiveCfg = Release|Any CPU

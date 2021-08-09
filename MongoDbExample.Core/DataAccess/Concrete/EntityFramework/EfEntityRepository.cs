@@ -11,6 +11,6 @@ namespace MongoDbExample.Core.DataAccess.Concrete.EntityFramework
 {
    public class EfEntityRepository//<T,TContext>:IEntityRepository<T> where T:class ,new() where TContext:DbContext,new()
     {
-  
+        
     }
 }
