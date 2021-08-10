@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MongoDbExample.Web.Connect;
 
 namespace MongoDbExample.Web
 {
@@ -23,7 +24,13 @@ namespace MongoDbExample.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient();
             services.AddControllersWithViews();
+           
+            services.Configure<BaseApiPath>(options =>
+            {
+                options.ApiRoot = Configuration.GetSection("MySettings:ApiRootUrl").Value;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
