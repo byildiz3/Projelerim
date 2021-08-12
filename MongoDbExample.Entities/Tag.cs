@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MongoDbExample.Entities
 {
-   public class Tag:BaseModel
+   public class Tag:BaseEntity
     {
         public string Name { get; set; }
 

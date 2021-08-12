@@ -5,11 +5,17 @@ using System.Reflection;
 using System.Text;
 using AutoMapper;
 using AutoMapper.Internal;
+using MongoDbExample.Business.Models;
+using MongoDbExample.Entities;
 
 namespace MongoDbExample.Business.Mapping.Mappings
 {
-   public class MappingProfile:Profile
+   public class PostProfile:Profile
     {
+        public PostProfile()
+        {
+            CreateMap<Post, PostModel>();
+        }
         //public MappingProfile()
         //{
         //    ApplyMappingsForAssembly(Assembly.GetExecutingAssembly());
@@ -24,7 +30,7 @@ namespace MongoDbExample.Business.Mapping.Mappings
         //    {
         //        var instance = Activator.CreateInstance(type);
         //        var methodInfo = type.GetMethod("Mapping");
-        //        methodInfo?.Invoke(instance, new object[] {this});
+        //        methodInfo?.Invoke(instance, new object[] { this });
         //    }
         //}
     }

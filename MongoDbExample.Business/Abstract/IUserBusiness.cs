@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using MongoDbExample.Core.Models;
 using MongoDbExample.Entities;
-using MongoDbExample.Models;
 
 namespace MongoDbExample.Business.Abstract
 {

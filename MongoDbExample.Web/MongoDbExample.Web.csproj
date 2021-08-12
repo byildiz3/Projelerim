@@ -5,17 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Connect\CategoryApi\" />
-    <Folder Include="Connect\TagApi\" />
-    <Folder Include="Connect\PostApi\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MongoDbExample.Business\MongoDbExample.Business.csproj" />
+    <ProjectReference Include="..\MongoDbExample.Core\MongoDbExample.Core.csproj" />
     <ProjectReference Include="..\MongoDbExample.Entities\MongoDbExample.Entities.csproj" />
   </ItemGroup>
 

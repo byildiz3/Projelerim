@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDbExample.Business.Abstract;
 using MongoDbExample.Core.Models;
-using MongoDbExample.Entities;
-using MongoDbExample.Models;
+using MongoDbExample.Entities; 
 
 namespace MongoDbExample.Api.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Mvc.Route("[controller]")]
+    [System.Web.Http.Route("api/[controller]")] 
     public class UserController : ControllerBase
     {
         private readonly IUserBusiness _userBusiness;
@@ -38,6 +36,10 @@ namespace MongoDbExample.Api.Controllers
         { 
             try
             {
+
+                 
+
+
                 var user = new User()
                 {
                     CreatedDate = DateTime.Now,

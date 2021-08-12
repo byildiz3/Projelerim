@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using MongoDbExample.Entities;
-using MongoDbExample.Web.Connect.UserApi;
+using MongoDbExample.Web.Connect;
 
 namespace MongoDbExample.Web.Controllers
 {
@@ -22,7 +22,7 @@ namespace MongoDbExample.Web.Controllers
 
         public IActionResult Index()
         { 
-          var result= UserApiConnect<User, User>.GetApi(_httpClient, "User", "GetUser",Configuration);
+          var result= ApiConnect<User, User>.GetApi(_httpClient, "User", "GetUser",Configuration);
             return View();
         }
     }

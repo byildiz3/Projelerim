@@ -5,7 +5,6 @@ using MongoDbExample.Business.Abstract;
 using MongoDbExample.Core.Models;
 using MongoDbExample.Data.Abstract;
 using MongoDbExample.Entities;
-using MongoDbExample.Models;
 
 namespace MongoDbExample.Business.Concrete
 {
